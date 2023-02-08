@@ -24,6 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
           decoration: kBoxDecorationStyle,
           height: 60.0,
           child: TextField(
+            cursorColor: Colors.white,
             keyboardType: TextInputType.emailAddress,
             style: TextStyle(
               color: Colors.white,
@@ -59,6 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
           decoration: kBoxDecorationStyle,
           height: 60.0,
           child: TextField(
+            cursorColor: Colors.white,
             obscureText: true,
             style: TextStyle(
               color: Colors.white,
@@ -256,10 +258,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Color(0xFF73AEF5),
-                      Color(0xFF61A4F1),
-                      Color(0xFF478DE0),
-                      Color(0xFF398AE5),
+                      Color.fromARGB(255, 16, 105, 212),
+                      Color.fromARGB(255, 20, 85, 160),
+                      Color.fromARGB(255, 16, 62, 119),
+                      Color.fromARGB(255, 8, 34, 65),
                     ],
                     stops: [0.1, 0.4, 0.7, 0.9],
                   ),
