@@ -83,9 +83,9 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget _buildForgotPasswordBtn() {
     return Container(
       alignment: Alignment.centerRight,
-      child: FlatButton(
+      child: TextButton(
         onPressed: () => print('Forgot Password Button Pressed'),
-        padding: EdgeInsets.only(right: 0.0),
+        //padding: EdgeInsets.only(right: 0.0),
         child: Text(
           'Forgot Password?',
           style: kLabelStyle,
@@ -96,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget _buildRememberMeCheckbox() {
     return Container(
-      height: 20.0,
+      height: 40.0,
       child: Row(
         children: <Widget>[
           Theme(
@@ -123,27 +123,25 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Widget _buildLoginBtn() {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 25.0),
+      padding: EdgeInsets.all(0),
       width: double.infinity,
-      child: RaisedButton(
-        elevation: 5.0,
-        onPressed: () => print('Login Button Pressed'),
-        padding: EdgeInsets.all(15.0),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30.0),
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.white,
         ),
-        color: Colors.white,
+        onPressed: () => print('Login Button Pressed'),
         child: Text(
           'LOGIN',
           style: TextStyle(
-            color: Color(0xFF527DAA),
+            color: Colors.blue,
             letterSpacing: 1.5,
-            fontSize: 18.0,
+            fontSize: 15.0,
             fontWeight: FontWeight.bold,
             fontFamily: 'OpenSans',
           ),
         ),
       ),
+      //color: Colors.black,
     );
   }
 
